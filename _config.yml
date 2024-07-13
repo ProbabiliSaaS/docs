@@ -1,0 +1,22 @@
+remote_theme: just-the-docs/just-the-docs
+title: ProbabiliSaaS Docs
+description: ProbabiliSaaS documentation
+# logo: "/images/falkor-logo.png"
+# favicon_ico: "/images/favicon.ico"
+ga_tracking: G-0V4CX90653
+
+search_enabled: true
+color_scheme: dark
+
+aux_links:
+  "Docs Repository":
+    - "//github.com/probabilisaas/docs"
+#  "FalkorDB Repository":
+#    - "//github.com/probabilisaas"
+
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+plugins:
+  - jekyll-sitemap
