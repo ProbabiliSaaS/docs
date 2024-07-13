@@ -1,6 +1,6 @@
 ---
 title: "Efficient Cuckoo Filter"
-description: Efficient Cuckoo Filter overview
+description: Efficient Cuckoo Filter Commands
 nav_order: 2
 has_children: true
 ---

@@ -1,4 +1,3 @@
-
 ---
 title: "Client Libraries"
 nav_order: 3
