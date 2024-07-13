@@ -4,6 +4,7 @@ description: ProbabiliSaaS documentation
 # logo: "/images/falkor-logo.png"
 # favicon_ico: "/images/favicon.ico"
 ga_tracking: G-8ELV0F5V4M
+ga_tracking_anonymize_ip: true
 
 search_enabled: true
 color_scheme: dark

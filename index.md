@@ -25,30 +25,13 @@ Once loaded you can interact with our using any of the supported [client librari
 Here we'll use [ProbabiliSaaS Python client](https://pypi.org/project/ProbabiliSaaS/) to create a bloom filter, insert elements and watching how element s are expired.
 
 ```python
-from falkordb import FalkorDB
+from probabilisaas import ProbSaas
 
-# Connect to FalkorDB
-db = FalkorDB(host='localhost', port=6379)
+# Connect to ProbabiliSaas
+con = ProbSaas(host='localhost', port=6379)
 
-# Create the 'MotoGP' graph
-g = db.select_graph('MotoGP')
-g.query("""CREATE
-           (:Rider {name:'Valentino Rossi'})-[:rides]->(:Team {name:'Yamaha'}),
-           (:Rider {name:'Dani Pedrosa'})-[:rides]->(:Team {name:'Honda'}),
-           (:Rider {name:'Andrea Dovizioso'})-[:rides]->(:Team {name:'Ducati'})""")
-
-# Query which riders represents Yamaha?
-res = g.query("""MATCH (r:Rider)-[:rides]->(t:Team)
-                 WHERE t.name = 'Yamaha'
-                 RETURN r.name""")
-
-for row in res.result_set:
-    print(row[0]) # Prints: "Valentino Rossi"
-
-# Query how many riders represent team Ducati ?
-res = g.query("""MATCH (r:Rider)-[:rides]->(t:Team {name:'Ducati'}) RETURN count(r)""")
-
-print(row[0]) # Prints: 1
+con.bf_reserve("test", 1000, 0.01)
+con.bf_add("test", "42")
 ```
 
 For additional demos please see visit [Demos](https://github.com/FalkorDB/demos).
