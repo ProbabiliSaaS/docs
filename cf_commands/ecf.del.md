@@ -1,5 +1,6 @@
 ---
 title: "ECF.DEL"
+nav_order: 4
 description: >
     Delete an element from a filter
 parent: "Commands"
