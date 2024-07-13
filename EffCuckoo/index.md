@@ -1,7 +1,7 @@
 ---
 title: "Efficient Cuckoo Filter"
 description: Efficient Cuckoo Filter overview
-nav_order: 1
+nav_order: 2
 has_children: true
 ---
 
