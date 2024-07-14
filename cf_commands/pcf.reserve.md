@@ -16,7 +16,7 @@ The `PCF.RESERVE` creates a new filter using parameters provided by
 
 ### BUCKET_SIZE
 
-
+`BUCKET_SIZE` helps the filter achieve a higher fill rate before becoming full. On the other hand, it increases the error rate.
 
 Example:
 ```
