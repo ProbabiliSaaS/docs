@@ -1,0 +1,27 @@
+---
+title: "PCF.COUNT"
+nav_order: 3
+description: >
+    Count item insertions into a filter
+parent: "Commands"
+---
+
+# PCF.COUNT
+
+Usage: `PCF.COUNT item element`
+
+The `PCF.COUNT` command returns a count of how many times an item has been added to a cuckoo filter, with results within the error rate.
+
+Example:
+```
+127.0.0.1:6379> PCF.RESERVE PCF 64 PROBABILITY 0.01
+(true)
+127.0.0.1:6379> PCF.ADD PCF 42
+(true)
+127.0.0.1:6379> PCF.ADD PCF 42
+(true)
+127.0.0.1:6379> PCF.ADD PCF 42
+(true)
+127.0.0.1:6379> PCF.COUNT PCF 42
+(integer) 1
+```

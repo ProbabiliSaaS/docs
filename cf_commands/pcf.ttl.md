@@ -1,0 +1,23 @@
+---
+title: "PCF.TTL"
+nav_order: 850
+description: >
+    Return TTL of an item.
+parent: "Commands"
+---
+
+# PCF.TTL
+
+Usage: `PCF.TTL item item`
+
+The `PCF.TTL` command returns the Time-To-Live (TTL) of an item. '0' is returned if item was not found is expired.
+
+Example:
+```
+127.0.0.1:6379> PCF.RESERVE PCF 64 PROBABILITY 0.01
+(true)
+127.0.0.1:6379> PCF.ADD PCF 42
+(true)
+127.0.0.1:6379> PCF.TTL PCF 42
+(integer) 10
+```
