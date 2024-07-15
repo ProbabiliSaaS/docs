@@ -6,14 +6,16 @@ nav_order: 998
 
 # References
 
-[//]: # (* [FalkorDB Blog](https://www.falkordb.com/blog))
-
 * Video
   - [Bloom Filters](https://www.youtube.com/watch?v=C27lZKhiKiA)
   - [How to Use Bloom Filters in Redis](https://www.youtube.com/watch?v=Z9_wrhdbSC4)
 
 * Article
   - [What is Top-K and how is it done in RedisBloom module?](https://medium.com/@ariel.shtul/what-is-tok-k-and-how-is-it-done-in-redisbloom-module-acd9316b35bd)
+  - [Sliding Bloom Filter](https://programming.guide/sliding-bloom-filter.html)
+
+* Academic papers
+  - [A Learned Cuckoo Filter for Approximate Membership Queries over Variable-sized Sliding Windows on Data Streams](https://dl.acm.org/doi/10.1145/3626758)
   - [Age-Partitioned Bloom Filters](https://arxiv.org/abs/2001.03147).
 Ariel Shtul, Carlos Baquero, Paulo Sérgio Almeida.
 ([pdf](https://arxiv.org/pdf/2001.03147))
