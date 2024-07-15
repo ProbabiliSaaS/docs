@@ -3,7 +3,7 @@ title: "PCF.PARAMS"
 nav_order: 800
 description: >
     Creates string representation of a filter initialization parameters.
-parent: "Commands"
+parent: "Cuckoo Filter"
 ---
 
 # PCF.PARAMS

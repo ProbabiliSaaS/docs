@@ -3,7 +3,7 @@ title: "PCF.ADD"
 nav_order: 1
 description: >
     Add an element to a filter
-parent: "Commands"
+parent: "Cuckoo Filter"
 ---
 
 # PCF.ADD

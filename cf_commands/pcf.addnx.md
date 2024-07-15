@@ -3,7 +3,7 @@ title: "PCF.ADDNX"
 nav_order: 2
 description: >
     Add an item to a cuckoo filter if the item does not exists
-parent: "Commands"
+parent: "Cuckoo Filter"
 ---
 
 # PCF.ADDNX

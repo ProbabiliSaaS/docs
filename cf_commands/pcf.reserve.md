@@ -3,7 +3,7 @@ title: "PCF.RESERVE"
 nav_order: 900
 description: >
     Create a new cuckoo filter
-parent: "Commands"
+parent: "Cuckoo Filter"
 ---
 
 # PCF.RESERVE

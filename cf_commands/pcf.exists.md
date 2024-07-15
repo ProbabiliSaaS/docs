@@ -3,7 +3,7 @@ title: "PCF.EXISTS"
 nav_order: 5
 description: >
     Check if an element exists in a filter
-parent: "Commands"
+parent: "Cuckoo Filter"
 ---
 
 # PCF.EXISTS

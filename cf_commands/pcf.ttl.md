@@ -3,7 +3,7 @@ title: "PCF.TTL"
 nav_order: 850
 description: >
     Return TTL of an item.
-parent: "Commands"
+parent: "Cuckoo Filter"
 ---
 
 # PCF.TTL
