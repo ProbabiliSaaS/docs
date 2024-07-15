@@ -15,6 +15,8 @@ description: >
 [probabilisaas-url]: https://www.probabilisaas.com
 
 [probabilisaas-py-url]: https://github.com/probabilisaas/probabilisaas-py
+[probabilisaas-py-package]: https://github.com/probabilisaas/probabilisaas-py
+
 [node-probabilisaas-url]: www.123.com
 [node-probabilisaas-package]: https://www.npmjs.com/package/probabilisaas
 
