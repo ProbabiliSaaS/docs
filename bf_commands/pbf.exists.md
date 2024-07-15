@@ -3,7 +3,7 @@ title: "PBF.EXISTS"
 nav_order: 5
 description: >
     Check if an element exists in a filter
-parent: "Commands"
+parent: "Bloom Filter"
 ---
 
 # PBF.EXISTS

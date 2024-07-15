@@ -3,7 +3,7 @@ title: "PBF.ADD"
 nav_order: 1
 description: >
     Add an element to a filter
-parent: "Commands"
+parent: "Bloom Filter"
 ---
 
 # PBF.ADD

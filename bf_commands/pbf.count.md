@@ -3,7 +3,7 @@ title: "PBF.COUNT"
 nav_order: 3
 description: >
     Count item insertions into a filter
-parent: "Commands"
+parent: "Bloom Filter"
 ---
 
 # PBF.COUNT

@@ -3,7 +3,7 @@ title: "PBF.PARAMS"
 nav_order: 800
 description: >
     Creates string representation of a filter initialization parameters.
-parent: "Commands"
+parent: "Bloom Filter"
 ---
 
 # PBF.PARAMS

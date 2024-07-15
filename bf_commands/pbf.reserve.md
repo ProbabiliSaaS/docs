@@ -3,7 +3,7 @@ title: "PBF.RESERVE"
 nav_order: 900
 description: >
     Create a new cuckoo filter
-parent: "Commands"
+parent: "Bloom Filter"
 ---
 
 # PBF.RESERVE

@@ -3,7 +3,7 @@ title: "PBF.TTL"
 nav_order: 850
 description: >
     Return TTL of an item.
-parent: "Commands"
+parent: "Bloom Filter"
 ---
 
 # PBF.TTL

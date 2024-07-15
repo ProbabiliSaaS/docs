@@ -3,7 +3,7 @@ title: "PBF.TOUCH"
 nav_order: 700
 description: >
     Update a timestamp for an item in a filter. If the item does not exist, create the item. If the filter does not exist, create the filter.
-parent: "Commands"
+parent: "Bloom Filter"
 ---
 
 # PBF.TOUCH
