@@ -13,7 +13,7 @@ Usage: `PCF.PARAMS CAPACITY cap ERROR err [GROWBY growby] [[TIME_WINDOWS time_wi
 The `PCF.PARAMS` create a encoded string representation of the user parameters. The string can be then used with `PCF.RESERVE`, `PCF.TOUCH` and `PCF.MTOUCH` as a cleaner API.
 Filter has two modes: 
 
-* Time based - the filter shifts every `interval` seconds. An element will retire after `time_windows` number of shifts.
+* Time based - the filter shifts every `interval` seconds. An item will retire after `time_windows` number of shifts.
 * Count based - the filter will maintain its original `capacity` and will shift after `capacity / retention_batches` insertions.
 
 Notes:
@@ -31,7 +31,7 @@ Notes:
 `TIME_WINDOWS` - Number of time windows. Maximum value is `65530`.
 `INTERVAL` - Time interval between time window shifts. Maximum value is `31536000` (1 year).
 `RETENTION_BUCKET` - The number of `batches` that `capacity` is broken into. Maximum value is `65530`.
-`NO_DEL` - Elements cannot be removed from the filter. If set to `true`, duplicate elements will not be inserted. Instead, the time index will be updated. Default value is `false`.
+`NO_DEL` - items cannot be removed from the filter. If set to `true`, duplicate items will not be inserted. Instead, the time index will be updated. Default value is `false`.
 `DEL_EMPTY` - Delete a filter is it becomes empty. Default value is `false`.
 `NO_CREATE` - Avoid filter creation if it does not exist yet. Default value is `false`.
 

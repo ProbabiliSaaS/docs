@@ -8,12 +8,12 @@ permalink: /
 
 # ProbabiliSaaS
 
-ProbabiliSaaS is a collection of Probabilistic Data Structures with the ability to scale up and down, and expire elements after a set time. It uses our proprietary, patent pending Data structures. Currently we offer Bloom Filter and Cuckoo Filter variants. HyperLogLog with an expiration is in the making.
+ProbabiliSaaS is a collection of Probabilistic Data Structures with the ability to scale up and down, and expire items after a set time. It uses our proprietary, patent pending Data structures. Currently we offer Bloom Filter and Cuckoo Filter variants. HyperLogLog with an expiration is in the making.
 
 ## Primary features
 
 * Supports scale up and down autonomously to reduce memory footprint.
-* Support expiration of elements after set time. Similar to 'EXPIRE'.
+* Support expiration of items after set time. Similar to 'EXPIRE'.
 * Offers unique API beyond 'RedisBloom'.
 
 ## Give it a try
@@ -22,7 +22,7 @@ Try an instance using our free tier service at [ProbabiliSaaS Clouds](https://cl
 
 Once loaded you can interact with our using any of the supported [client libraries](/clients)
 
-Here we'll use [ProbabiliSaaS Python client](https://pypi.org/project/ProbabiliSaaS/) to create a bloom filter, insert elements and watching how element s are expired.
+Here we'll use [ProbabiliSaaS Python client](https://pypi.org/project/ProbabiliSaaS/) to create a bloom filter, insert items and watching how item s are expired.
 
 ```python
 from probabilisaas import ProbSaas

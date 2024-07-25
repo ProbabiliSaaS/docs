@@ -2,15 +2,15 @@
 title: "PBF.EXISTS"
 nav_order: 5
 description: >
-    Check if an element exists in a filter
+    Check if an item exists in a filter
 parent: "Bloom Filter"
 ---
 
 # PBF.EXISTS
 
-Usage: `PBF.EXISTS filter element`
+Usage: `PBF.EXISTS filter item`
 
-The `PBF.EXISTS` command checks whether an element exists in a filter.
+The `PBF.EXISTS` command checks whether an item exists in a filter.
 
 Example:
 ```

@@ -2,15 +2,15 @@
 title: "PCF.EXISTS"
 nav_order: 5
 description: >
-    Check if an element exists in a filter
+    Check if an item exists in a filter
 parent: "Cuckoo Filter"
 ---
 
 # PCF.EXISTS
 
-Usage: `PCF.EXISTS key element`
+Usage: `PCF.EXISTS key item`
 
-The `PCF.EXISTS` command checks whether an element exists in a filter.
+The `PCF.EXISTS` command checks whether an item exists in a filter.
 
 Example:
 

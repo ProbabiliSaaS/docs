@@ -2,15 +2,15 @@
 title: "PCF.DEL"
 nav_order: 4
 description: >
-    Delete an element from a filter
+    Delete an item from a filter
 parent: "Cuckoo Filter"
 ---
 
 # PCF.DEL
 
-Usage: `PCF.DEL key element`
+Usage: `PCF.DEL key item`
 
-The `PCF.DEL` command delete an element from the filter. If the filter has multiple copies, the oldest copy is removed.
+The `PCF.DEL` command delete an item from the filter. If the filter has multiple copies, the oldest copy is removed.
 
 Example:
 

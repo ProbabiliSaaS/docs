@@ -8,9 +8,9 @@ parent: "Bloom Filter"
 
 # PBF.PARAMS
 
-Usage: `PBF.PARAMS filter element`
+Usage: `PBF.PARAMS filter item`
 
-The `PBF.PARAMS` command checks whether an element exists in a filter.
+The `PBF.PARAMS` command checks whether an item exists in a filter.
 
 Example:
 ```

@@ -2,7 +2,7 @@
 title: "PBF.ADD"
 nav_order: 1
 description: >
-    Add an element to a filter
+    Add an item to a filter
 parent: "Bloom Filter"
 ---
 

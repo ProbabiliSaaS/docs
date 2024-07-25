@@ -2,15 +2,15 @@
 title: "PBF.DEL"
 nav_order: 4
 description: >
-    Delete an element from a filter
+    Delete an item from a filter
 parent: "Bloom Filter"
 ---
 
 # PBF.DEL
 
-Usage: `PBF.DEL filter element`
+Usage: `PBF.DEL filter item`
 
-The `PBF.DEL` command delete an element from the filter. If the filter has multiple copies, the oldest copy is removed.
+The `PBF.DEL` command delete an item from the filter. If the filter has multiple copies, the oldest copy is removed.
 
 Example:
 ```

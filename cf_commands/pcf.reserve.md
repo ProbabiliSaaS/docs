@@ -24,7 +24,7 @@ The `PCF.RESERVE` creates a new filter.
 `TIME_WINDOWS` - Number of time windows. Maximum value is `65530`.
 `INTERVAL` - Time interval between time window shifts. Maximum value is `31536000` (1 year).
 `RETENTION_BUCKET` - The number of `batches` that `capacity` is broken into. Maximum value is `65530`.
-`NO_DEL` - Elements cannot be removed from the filter. If set to `true`, duplicate elements will not be inserted. Instead, the time index will be updated. Default value is `false`.
+`NO_DEL` - items cannot be removed from the filter. If set to `true`, duplicate items will not be inserted. Instead, the time index will be updated. Default value is `false`.
 `DEL_EMPTY` - Delete a filter is it becomes empty. Default value is `false`.
 
 Example:

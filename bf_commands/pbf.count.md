@@ -8,7 +8,7 @@ parent: "Bloom Filter"
 
 # PBF.COUNT
 
-Usage: `PBF.COUNT item element`
+Usage: `PBF.COUNT item item`
 
 The `PBF.COUNT` command returns a count of how many times an item has been added to a cuckoo filter, with results within the error rate.
 

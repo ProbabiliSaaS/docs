@@ -2,7 +2,7 @@
 title: "PCF.ADD"
 nav_order: 1
 description: >
-    Add multiple elements to a filter
+    Add multiple items to a filter
 parent: "Cuckoo Filter"
 ---
 
@@ -10,7 +10,7 @@ parent: "Cuckoo Filter"
 
 Usage: `PCF.ADD key item1 [item2 ...]`
 
-The `PCF.ADD` command adds multiple elements to a filter.
+The `PCF.ADD` command adds multiple items to a filter.
 
 Example:
 
