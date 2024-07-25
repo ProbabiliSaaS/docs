@@ -8,18 +8,28 @@ parent: "Cuckoo Filter"
 
 # PCF.RESERVE
 
-Usage: `PCF.RESERVE key capacity [BUCKETSIZE bucketsize] [MAXITERATIONS maxiterations] [EXPANSION expansion]`
+Usage: `PCF.RESERVE key CAPACITY cap ERROR err [GROWBY growby] [[TIME_WINDOWS time_windows] [INTERVAL interval]] [RETENTION_BATCHES retention_batches] [NO_DEL bool] [DEL_EMPTY bool]`
 
-The `PCF.RESERVE` creates a new filter using parameters provided by 
+The `PCF.RESERVE` creates a new filter.
 
-## Optional arguments
+## Required arguments:
 
-### BUCKET_SIZE
+`key` - key name for the filter to be created.
+`CAPACITY` - Estimated required capacity for the filter.
+`ERROR` - The desired probability for false positives. The value is a floating value between 0 and 1.
 
-`BUCKET_SIZE` helps the filter achieve a higher fill rate before becoming full. On the other hand, it increases the error rate.
+## Optional arguments:
+
+`GROWBY` - The size of additional capacity when a filter scales up. If set to `0`, the filter cannot scale. Optional values are `0, 1, 2, 4, 8`.
+`TIME_WINDOWS` - Number of time windows. Maximum value is `65530`.
+`INTERVAL` - Time interval between time window shifts. Maximum value is `31536000` (1 year).
+`RETENTION_BUCKET` - The number of `batches` that `capacity` is broken into. Maximum value is `65530`.
+`NO_DEL` - Elements cannot be removed from the filter. If set to `true`, duplicate elements will not be inserted. Instead, the time index will be updated. Default value is `false`.
+`DEL_EMPTY` - Delete a filter is it becomes empty. Default value is `false`.
 
 Example:
-```
+
+```bash
 127.0.0.1:6379> PCF.RESERVE PCF 64 PROBABILITY 0.01
 (true)
 127.0.0.1:6379> PCF.EXISTS PCF 42

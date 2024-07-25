@@ -8,12 +8,13 @@ parent: "Cuckoo Filter"
 
 # PCF.COUNT
 
-Usage: `PCF.COUNT item element`
+Usage: `PCF.COUNT key item`
 
-The `PCF.COUNT` command returns a count of how many times an item has been added to a cuckoo filter, with results within the error rate.
+The `PCF.COUNT` command returns a count of item copies in the filter, with results within the error rate.
 
 Example:
-```
+
+```bash
 127.0.0.1:6379> PCF.RESERVE PCF 64 PROBABILITY 0.01
 (true)
 127.0.0.1:6379> PCF.ADD PCF 42

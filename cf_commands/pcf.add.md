@@ -10,11 +10,11 @@ parent: "Cuckoo Filter"
 
 Usage: `PCF.ADD key item`
 
-The `PCF.ADD` command adds an item to a filter. If a filter does not exist, a new one will be created.
+The `PCF.ADD` command adds an item to a filter.
 
 Example:
 ```
-127.0.0.1:6379> PCF.RESERVE PCF 64 PROBABILITY 0.01
+127.0.0.1:6379> PCF.RESERVE PCF CAPACITY 64 PROBABILITY 0.01
 (true)
 127.0.0.1:6379> PCF.EXISTS PCF 42
 (false)

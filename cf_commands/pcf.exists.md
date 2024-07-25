@@ -8,12 +8,13 @@ parent: "Cuckoo Filter"
 
 # PCF.EXISTS
 
-Usage: `PCF.EXISTS filter element`
+Usage: `PCF.EXISTS key element`
 
 The `PCF.EXISTS` command checks whether an element exists in a filter.
 
 Example:
-```
+
+```bash
 127.0.0.1:6379> PCF.RESERVE PCF 64 PROBABILITY 0.01
 (true)
 127.0.0.1:6379> PCF.EXISTS PCF 42
