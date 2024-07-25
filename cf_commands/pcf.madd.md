@@ -1,16 +1,16 @@
 ---
-title: "PCF.ADD"
+title: "PCF.MADD"
 nav_order: 1
 description: >
     Add multiple items to a filter
 parent: "Cuckoo Filter"
 ---
 
-# PCF.ADD
+# PCF.MADD
 
-Usage: `PCF.ADD key item1 [item2 ...]`
+Usage: `PCF.MADD key item1 [item2 ...]`
 
-The `PCF.ADD` command adds multiple items to a filter.
+The `PCF.MADD` command adds multiple items to a filter.
 
 Example:
 

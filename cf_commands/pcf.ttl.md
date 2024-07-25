@@ -15,7 +15,7 @@ The `PCF.TTL` command returns the Time-To-Live (TTL) of an item. '0' is returned
 Example:
 
 ```bash
-127.0.0.1:6379> PCF.RESERVE PCF 64 PROBABILITY 0.01
+127.0.0.1:6379> PCF.RESERVE PCF CAPACITY 64 PROBABILITY 0.01
 (true)
 127.0.0.1:6379> PCF.ADD PCF 42
 (true)
