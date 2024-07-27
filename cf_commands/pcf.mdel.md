@@ -1,6 +1,6 @@
 ---
 title: "PCF.MDEL"
-nav_order: 4
+nav_order: 21
 description: >
     Delete multiple items from a filter
 parent: "Cuckoo Filter"

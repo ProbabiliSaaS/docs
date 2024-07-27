@@ -1,6 +1,6 @@
 ---
 title: "PCF.MCOUNT"
-nav_order: 3
+nav_order: 15
 description: >
     Count items' insertions into a filter
 parent: "Cuckoo Filter"

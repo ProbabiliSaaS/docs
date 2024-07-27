@@ -1,6 +1,6 @@
 ---
 title: "PCF.DEL"
-nav_order: 4
+nav_order: 20
 description: >
     Delete an item from a filter
 parent: "Cuckoo Filter"

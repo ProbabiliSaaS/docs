@@ -1,8 +1,8 @@
 ---
 title: "PCF.TOUCH"
-nav_order: 700
+nav_order: 7
 description: >
-    Update a timestamp for an item in a filter. If the item does not exist, create the item. If the filter does not exist, create the filter.
+    Update a timestamp for an item in a filter.
 parent: "Cuckoo Filter"
 ---
 
@@ -10,17 +10,21 @@ parent: "Cuckoo Filter"
 
 Usage: `PCF.TOUCH key [PARAMS params] ITEMS item timestamp`
 
-The `PCF.TOUCH` command updates a timestamp of an item in a filter. The the timestamp will update only if timestamp is newer than th current timestamp. If a filter does not exist, a new filter will be created.
+The `PCF.TOUCH` command updates a timestamp of an item in a filter. The the timestamp will update only if timestamp is newer than th current timestamp. If an item does not exist, it will be created. If a filter does not exist, a new filter will be created.
 
 Example:
 
 ```bash
-127.0.0.1:6379> PCF.RESERVE PCF 64 PROBABILITY 0.01
-(true)
-127.0.0.1:6379> PCF.EXISTS PCF 42
+127.0.0.1:6379> PCF.PARAMS CAPACITY 64 ERROR 0.01 TIME_WINDOWS 10 INTERVAL 1
+"PaRAm$!%^&"
+127.0.0.1:6379> PCF.EXISTS PCF bloom
 (false)
-127.0.0.1:6379> PCF.ADD PCF 42
+127.0.0.1:6379> PCF.MTOUCH PCF PARAMS PaRAm$!%^& ITEMS bloom 4
 (true)
-127.0.0.1:6379> PCF.EXISTS PCF 42
+127.0.0.1:6379> PCF.EXISTS PCF bloom
 (true)
+127.0.0.1:6379> PCF.TTL PCF bloom
+(6)
+127.0.0.1:6379> PCF.TTL PCF filter
+(0)
 ```

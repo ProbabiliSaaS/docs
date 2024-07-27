@@ -1,16 +1,16 @@
 ---
-title: "FBF.ADD"
-nav_order: 4
+title: "FBF.MADD"
+nav_order: 5
 description: >
     Add an item to a filter
 parent: "Bloom Filter"
 ---
 
-# FBF.ADD
+# FBF.MADD
 
-Usage: `FBF.ADD key item`
+Usage: `FBF.MADD key item`
 
-The `FBF.ADD` command adds an item to a filter. If a filter does not exist, a new one will be created.
+The `FBF.MADD` command adds multiple items to a filter. If a filter does not exist, a new one will be created.
 
 Example:
 
@@ -19,7 +19,7 @@ Example:
 (true)
 127.0.0.1:6379> FBF.EXISTS FBF 42
 (false)
-127.0.0.1:6379> FBF.ADD FBF 42
+127.0.0.1:6379> FBF.MADD FBF 42
 (true)
 127.0.0.1:6379> FBF.EXISTS FBF 42
 (true)

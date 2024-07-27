@@ -1,29 +1,26 @@
 ---
-title: "PBF.EXISTS"
-nav_order: 5
+title: "FBF.EXISTS"
+nav_order: 10
 description: >
     Check if an item exists in a filter
 parent: "Bloom Filter"
 ---
 
-# PBF.EXISTS
+# FBF.EXISTS
 
-Usage: `PBF.EXISTS filter item`
+Usage: `FBF.EXISTS filter item`
 
-The `PBF.EXISTS` command checks whether an item exists in a filter.
+The `FBF.EXISTS` command checks whether an item exists in a filter.
 
 Example:
-```
-127.0.0.1:6379> PBF.RESERVE PBF 64 PROBABILITY 0.01
+
+```bash
+127.0.0.1:6379> FBF.RESERVE FBF CAPACITY 64 ERROR 0.01
 (true)
-127.0.0.1:6379> PBF.EXISTS PBF 42
+127.0.0.1:6379> FBF.EXISTS FBF 42
 (false)
-127.0.0.1:6379> PBF.ADD PBF 42
+127.0.0.1:6379> FBF.ADD FBF 42
 (true)
-127.0.0.1:6379> PBF.EXISTS PBF 42
+127.0.0.1:6379> FBF.EXISTS FBF 42
 (true)
-127.0.0.1:6379> PBF.DEL PBF 42
-(true)
-127.0.0.1:6379> PBF.EXISTS PBF 42
-(false)
 ```

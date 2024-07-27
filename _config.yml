@@ -20,28 +20,3 @@ aux_links_new_tab: true
 
 plugins:
   - jekyll-sitemap
-
-# Navigation structure
-collections:
-  docs:
-    output: true
-    permalink: /:path/
-    sidebar:
-      nav_order: 1
-      items:
-        - title: "Bloom Filter Commands"
-          url: /bf_commands/
-          items:
-            - title: "Add"
-              url: /bf_commands/pbf.add/
-            - title: "AddNX"
-              url: /bf_commands/pbf.addnx/
-            # Add other commands here
-        - title: "Cuckoo Filter Commands"
-          url: /cf_commands/
-          items:
-            - title: "Add"
-              url: /cf_commands/pcf.add/
-            - title: "AddNX"
-              url: /cf_commands/pcf.addnx/
-            # Add other commands here

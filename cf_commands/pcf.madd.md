@@ -1,6 +1,6 @@
 ---
 title: "PCF.MADD"
-nav_order: 1
+nav_order: 5
 description: >
     Add multiple items to a filter
 parent: "Cuckoo Filter"

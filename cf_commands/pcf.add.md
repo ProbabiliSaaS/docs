@@ -1,6 +1,6 @@
 ---
 title: "PCF.ADD"
-nav_order: 1
+nav_order: 4
 description: >
     Add an item to a filter
 parent: "Cuckoo Filter"
